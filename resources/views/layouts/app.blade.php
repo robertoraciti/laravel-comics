@@ -14,7 +14,9 @@
     </header>
     <main>
         @yield('main-content')</main>
-    <footer>footer</footer>
+    <footer>
+        @include('partials._footer')
+    </footer>
     
 </body>
 </html>

@@ -3,7 +3,7 @@
         <div class="container">
 
             <div class="cards-container">
-              @foreach ($comics as $comic)
+              @foreach ($data['comics'] as $comic)
               <div class="card">
                   <img src="{{ $comic['thumb'] }}" alt="" />
                   <p>{{ $comic['series'] }}</p>
@@ -21,6 +21,7 @@
   <style lang="scss">
 .main-cont {
     background-color: black;
+    padding-top: 50px
 }
 
 .cards-container {
@@ -47,14 +48,14 @@
 
 .card {
     width: 16%;
-    height: 200px;
+    height: 280px;
     margin-top: 30px;
     background-color: black ;
 
 }
 .card img {
     width: 100%;
-    height: 150px;
+    height: 250px;
     object-fit: cover;
     object-position: top;
 }
