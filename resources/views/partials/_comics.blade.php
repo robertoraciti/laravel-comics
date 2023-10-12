@@ -34,7 +34,7 @@
 .main-cont .btn {
     width: 100%;
   text-align: center;
-  margin-top: 50px;
+  margin: 50px 0 20px 0;
 
 }
 .main-cont button {

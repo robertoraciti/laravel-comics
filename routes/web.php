@@ -25,3 +25,16 @@ Route::get('/', function () {
     ];
     return view('home', compact('data'));
 })->name('home');
+
+Route::get('/news', function () {
+    $data = [
+        'comics' => config('db_comics.comics'),
+        'footer_images' => config('db_footer.images'),
+        'footer_links' => config('db_footer.links'),
+        'footer_shops' => config('db_footer.shops'),
+        'footer_help_options' => config('db_footer.help_options'),
+        'footer_sites' => config('db_footer.sites'),
+        'footer_icons' => config('db_footer.icons')
+    ];
+    return view('news', compact('data'));
+})->name('news');

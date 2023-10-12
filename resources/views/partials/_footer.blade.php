@@ -68,7 +68,6 @@
     .azure-sec {
       background-color: #0282f9;
       height: 150px;
-      margin-top: 30px;
     }
     .azure-sec div {
       z-index: 1;
