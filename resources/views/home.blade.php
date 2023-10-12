@@ -6,7 +6,8 @@
 
 @section('main-content')
 <section>
-    <h1>Homepage</h1>
+    @include('partials._jumbotron')
+    @include('partials._comics')
 </section>
     
 @endsection

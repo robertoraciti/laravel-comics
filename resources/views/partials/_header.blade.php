@@ -1,4 +1,4 @@
-  <nav class="navbar navbar-expand-lg container" >
+  <nav class="navbar navbar-expand-lg container" id="navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="{{ route('home') }}">
         <img src="/img/dc-logo.png" alt="" srcset="" width="70">
@@ -57,5 +57,7 @@
   </nav>
 
   <style lang="scss" scoped>
-
+    #navbar {
+      height: 120px;
+    }
   </style>
